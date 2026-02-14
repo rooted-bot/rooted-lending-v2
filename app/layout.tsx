@@ -1,39 +1,37 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { OrganizationSchema, WebsiteSchema } from '@/components/StructuredData'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'BitcoinLoans.com | Compare Bitcoin-Backed Loan Platforms',
-  description: 'Find the best Bitcoin loan platforms. Compare rates, calculate payments, and get instant crypto-backed loans without selling your Bitcoin.',
-  keywords: 'bitcoin loans, crypto loans, bitcoin backed loans, crypto lending, bitcoin collateral',
+  title: 'Rooted Lending | Real Estate Investor Loans | DSCR, Fix & Flip, Construction',
+  description: 'Real estate investor lending with competitive rates. DSCR loans, fix & flip financing, new construction, and bank statement loans. Close in 5-10 days. NMLS #2744030',
+  keywords: 'real estate investor loans, DSCR loans, fix and flip loans, construction loans, bank statement loans, hard money lending, investment property financing',
   openGraph: {
-    title: 'BitcoinLoans.com | Compare Bitcoin-Backed Loan Platforms',
-    description: 'Find the best Bitcoin loan platforms. Compare rates, calculate payments, and get instant crypto-backed loans without selling your Bitcoin.',
-    url: 'https://bitcoinloans.com',
-    siteName: 'BitcoinLoans.com',
+    title: 'Rooted Lending | Real Estate Investor Loans',
+    description: 'Investor-focused lending with competitive rates. Close in 5-10 days.',
+    url: 'https://rootedlending.com',
+    siteName: 'Rooted Lending',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BitcoinLoans.com | Compare Bitcoin-Backed Loan Platforms',
-    description: 'Find the best Bitcoin loan platforms. Compare rates, calculate payments, and get instant crypto-backed loans without selling your Bitcoin.',
+    title: 'Rooted Lending | Real Estate Investor Loans',
+    description: 'Investor-focused lending with competitive rates. Close in 5-10 days.',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   verification: {
-    google: 'YOUR_GOOGLE_SITE_VERIFICATION',
+    google: 'YOUR_VERIFICATION_CODE',
+  },
+  alternates: {
+    canonical: 'https://rootedlending.com',
   },
 }
 
@@ -43,14 +41,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
-        <OrganizationSchema />
-        <WebsiteSchema />
+        <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="min-h-screen bg-white">
+      <body className={`${inter.className} antialiased`}>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

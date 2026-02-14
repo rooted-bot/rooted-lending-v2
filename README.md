@@ -1,56 +1,238 @@
-# BitcoinLoans.com
+# Rooted Lending v2 - Improved Website
 
-Affiliate website for Bitcoin-backed loan platforms.
+## Overview
+SEO-optimized, conversion-focused website for Rooted Lending with integrated tools and resources for real estate investors.
 
-## Features
+## Key Improvements Over v1
 
-- **10 Educational Articles** - Comprehensive guides on Bitcoin loans
-- **Loan Calculator** - Compare rates and calculate payments
-- **Lender Comparison Table** - Side-by-side platform comparison
-- **Legal Pages** - Disclaimer, Privacy Policy, Terms of Service
-- **Email Capture** - Newsletter for crypto lending updates
+### 1. SEO Optimization
+- Comprehensive meta tags on all pages
+- Structured data (Schema.org) for organization, local business, and services
+- XML sitemap generation
+- Robots.txt optimization
+- Canonical URLs
+- Open Graph and Twitter Card support
+- Semantic HTML structure
 
-## Target Keywords
+### 2. User Experience
+- Fast page load times (static export)
+- Mobile-first responsive design
+- Clear navigation with loan product dropdowns
+- Quick rate quote form on homepage
+- Calculator integration
+- Deal Analyzer prominent placement
 
-1. Best Bitcoin loan platforms
-2. Bitcoin backed loans
-3. Crypto loan calculator
-4. How to get a loan with Bitcoin
-5. Bitcoin lending rates
-6. Crypto collateral loans
-7. Bitcoin loan without selling
-8. Instant Bitcoin loans
-9. Bitcoin loan comparison
-10. Crypto lending platforms
+### 3. Content Strategy
+- Individual loan product pages with detailed information
+- Educational blog section
+- FAQ section
+- Market reports
+- Success stories/testimonials
+- Resource downloads
 
-## Affiliate Programs
+### 4. Lead Generation
+- Multiple CTAs throughout site
+- Quick quote forms
+- Application funnel
+- Email capture for market reports
+- Calculator lead magnets
+- Deal Analyzer integration
 
-- Nexo - https://nexo.com/affiliates
-- YouHodler - https://youhodler.com/affiliate  
-- CoinRabbit - partners@coinrabbit.io
-- BlockFi (check status)
-- Celsius (avoid - bankruptcy)
+### 5. Trust Building
+- NMLS number prominently displayed
+- Client testimonials with photos
+- Deal case studies
+- Team member bios
+- Compliance information
+- Clear privacy policy
 
-## Legal Compliance
+## Pages Structure
 
-- Only promote established, regulated platforms
-- Clear risk disclosures on all pages
-- Affiliate disclosure on every page
-- No promotion of unregulated/offshore lenders
-- No Celsius, BlockFi (bankruptcy issues)
+```
+/
+├── / (Homepage)
+├── /loans
+│   ├── /dscr
+│   ├── /fix-flip
+│   ├── /construction
+│   ├── /bank-statement
+│   ├── /dscr-construction
+│   └── /conventional
+├── /calculators
+├── /blog
+├── /about
+├── /testimonials
+├── /faq
+├── /contact
+├── /apply
+├── /legal
+│   ├── /privacy
+│   ├── /terms
+│   ├── /disclaimer
+│   └── /nmls
+└── /sitemap.xml
+```
 
-## Tech Stack
+## Integration Points
 
+### CRM Integration (GoHighLevel)
+- Form submissions → GoHighLevel
+- Lead scoring based on behavior
+- Automated email sequences
+- Pipeline management
+
+### Deal Analyzer
+- Links to dealanalyzer.rootedlending.com
+- Embedded calculator widgets
+- Shared branding
+
+### Rooted Wealth
+- Cross-promotion for portfolio tracking
+- Investor education content
+
+## Technical Stack
 - Next.js 14 (Static Export)
 - Tailwind CSS
-- TypeScript
-- Recharts (Calculator)
+- Lucide React Icons
+- Recharts (for calculators)
+- React Hook Form (forms)
+- Zod (validation)
 
 ## Deployment
 
-Static export to WP Engine or Vercel.
+### Option 1: WP Engine (Recommended)
+- Static export to WP Engine
+- Custom domain: rootedlending.com
+- SSL certificate
+- CDN for performance
 
-```bash
-npm install
-npm run build
-```
+### Option 2: Vercel
+- Automatic deployments from GitHub
+- Edge network for global speed
+- Preview deployments for testing
+
+### Option 3: Netlify
+- Git-based deployment
+- Form handling
+- Branch previews
+
+## SEO Checklist
+
+### On-Page SEO
+- [ ] Title tags optimized (60 chars)
+- [ ] Meta descriptions (155 chars)
+- [ ] Header tags hierarchy (H1-H6)
+- [ ] Image alt tags
+- [ ] Internal linking structure
+- [ ] Schema markup
+- [ ] Fast load times (<3s)
+- [ ] Mobile responsive
+- [ ] SSL certificate
+- [ ] XML sitemap
+
+### Content SEO
+- [ ] Target keywords in content
+- [ ] Local SEO optimization
+- [ ] Long-form content (1500+ words)
+- [ ] FAQ schema
+- [ ] How-to content
+- [ ] Regular blog updates
+
+### Technical SEO
+- [ ] Robots.txt
+- [ ] Canonical URLs
+- [ ] 301 redirects
+- [ ] 404 page
+- [ ] Structured data
+- [ ] Page speed optimization
+- [ ] Core Web Vitals
+
+## Analytics & Tracking
+
+### Google Analytics 4
+- Page views
+- Event tracking
+- Conversion goals
+- User flow
+
+### Google Search Console
+- Indexing status
+- Search queries
+- Click-through rates
+- Core Web Vitals
+
+### Facebook Pixel
+- Conversion tracking
+- Retargeting audiences
+- Lookalike audiences
+
+## Post-Launch Tasks
+
+### Week 1
+- [ ] Submit sitemap to Google
+- [ ] Verify Google Search Console
+- [ ] Set up Google Analytics
+- [ ] Test all forms
+- [ ] Check mobile responsiveness
+- [ ] Verify all links work
+
+### Month 1
+- [ ] Publish 2-4 blog posts
+- [ ] Set up social media profiles
+- [ ] Create Google Business Profile
+- [ ] Submit to local directories
+- [ ] Set up email sequences
+
+### Ongoing
+- [ ] Weekly blog posts
+- [ ] Monthly SEO audits
+- [ ] Quarterly content updates
+- [ ] Review and update testimonials
+- [ ] Monitor and respond to reviews
+
+## Content Calendar
+
+### Weekly
+- 1 blog post
+- 2 social media posts
+- 1 email newsletter
+
+### Monthly
+- 1 market report
+- 1 case study/success story
+- Update loan rates
+- Review and optimize top pages
+
+### Quarterly
+- Major content audit
+- Competitor analysis
+- Keyword research update
+- Backlink building campaign
+
+## ROI Tracking
+
+### Lead Metrics
+- Website visitors
+- Quote requests
+- Application starts
+- Applications completed
+- Loans funded
+
+### Cost Metrics
+- Cost per visitor
+- Cost per lead
+- Cost per application
+- Cost per funded loan
+
+### Revenue Metrics
+- Revenue per loan
+- Lifetime customer value
+- Repeat client rate
+- Referral rate
+
+## Contact
+
+For questions about this project:
+- Developer: Ron Bot
+- Client: Rooted Lending
+- Email: travis@rootedcompanies.com
